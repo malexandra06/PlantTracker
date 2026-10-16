@@ -1,0 +1,20 @@
+{
+  "name": "lab1-backend",
+  "version": "1.0.0",
+  "description": "Plant Tracker REST API + WebSocket notifications (Express + MySQL)",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "dev": "node --watch --env-file=.env src/server.js",
+    "db:reset": "node --env-file=.env src/db/reset.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.5",
+    "ws": "^8.22.0"
+  }
+}
